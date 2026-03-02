@@ -8,9 +8,9 @@
 cls
 Write-Host ""
 Write-Host "=====================================" -ForegroundColor Cyan
-Write-Host "          TOOLS COLLECTOR            " -ForegroundColor Green
+Write-Host "          KONTROL ARAÇLARI            " -ForegroundColor Green
 Write-Host "=====================================" -ForegroundColor Cyan
-Write-Host " Made By Java | Ported from Unknown  " -ForegroundColor DarkGray
+Write-Host " edited by yigitboi07 | Ported from Unknown  " -ForegroundColor DarkGray
 Write-Host ""
 
 # -----------------------
@@ -27,10 +27,10 @@ if (-not ([Security.Principal.WindowsPrincipal] `
 }
 
 # -----------------------
-# Folder setup (C:\SS1, SS2, ...)
+# Folder setup (C:\KONT1, KONT2, ...)
 # -----------------------
 $root = "C:\"
-$name = "SS"
+$name = "KONT"
 $i = 1
 while (Test-Path "$root$name$i") { $i++ }
 $folder = "$root$name$i"
@@ -114,7 +114,6 @@ $urls = @(
     'https://www.nirsoft.net/utils/usbdeview-x64.zip',
     'https://www.nirsoft.net/utils/networkusageview-x64.zip',
     'https://d1kpmuwb7gvu1i.cloudfront.net/AccessData_FTK_Imager_4.7.1.exe',
-    'https://github.com/Yamato-Security/hayabusa/releases/download/v3.6.0/hayabusa-3.6.0-win-x64.zip',
     'https://download.ericzimmermanstools.com/net9/TimelineExplorer.zip',
     'https://www.nirsoft.net/utils/usbdrivelog.zip',
     'https://www.voidtools.com/Everything-1.4.1.1029.x64-Setup.exe',
@@ -123,15 +122,19 @@ $urls = @(
     'https://github.com/NotRequiem/InjGen/releases/download/v2.0/InjGen.exe',
     'https://github.com/ItzIceHere/RedLotus-Mod-Analyzer/releases/download/RL/RedLotusModAnalyzer.exe',
     'https://github.com/RedLotus-Development/White-Lotus-Scanner/releases/download/forensics/WhiteLotus.exe',
-    'https://download.ericzimmermanstools.com/net9/MFTECmd.zip',
-    'https://download.ericzimmermanstools.com/net9/MFTExplorer.zip',
     'https://github.com/zedoonvm1/TasksParser/releases/download/1.1/Tasks.Parser.exe',
-    'https://download.ericzimmermanstools.com/net9/PECmd.zip',
     'https://download.ericzimmermanstools.com/net9/JumpListExplorer.zip',
     'https://github.com/Orbdiff/Fileless/releases/download/v1.1/Fileless.exe'
     'https://github.com/txvch/Screenshare-Collector/releases/download/tech/Technical.Utilities.exe'
     'https://github.com/ItzIceHere/RedLotusAltChecker/releases/download/RL/RedLotusAltChecker.exe'
+    'https://dl.echo.ac/tool/journal'
+    'https://github.com/kacos2000/Win10LiveInfo/releases/download/v.1.0.23.0/WinLiveInfo.exe'
+    'https://www.nirsoft.net/utils/regscanner.html'
+    'https://github.com/moaistory/WinSearchDBAnalyzer/releases/download/1.0.0.6/WinSearchDBAnalyzer.exe'
+    'https://www.nirsoft.net/utils/appaudioconfig-x64.zip'
+    'https://github.com/zodiacon/AllTools/raw/master/NtfsStreams.zip'
     'https://api.anticheat.ac/dl/cli'
+
     )
 
 # -----------------------
